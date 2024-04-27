@@ -17,7 +17,7 @@ void app_main(void)
 {
 
     init_display();
-    set_backlight_brightness(2);
+    set_backlight_brightness(133);
 
     ESP_LOGI(TAG, "Start LVGL");
 

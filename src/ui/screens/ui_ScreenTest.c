@@ -28,7 +28,7 @@ void ui_ScreenTest_screen_init(void)
     lv_obj_set_width(ui_LabelHelloWorld, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_LabelHelloWorld, LV_SIZE_CONTENT);    /// 30
     lv_obj_set_align(ui_LabelHelloWorld, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_LabelHelloWorld, "Hello World");
+    lv_label_set_text(ui_LabelHelloWorld, "Horn 1.2 test");
     lv_obj_set_style_text_font(ui_LabelHelloWorld, &lv_font_montserrat_48, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_LabelCounter = lv_label_create(ui_Panel1);
@@ -49,7 +49,7 @@ void ui_ScreenTest_screen_init(void)
 
     ui_SliderBrightness = lv_slider_create(ui_Panel2);
     lv_slider_set_range(ui_SliderBrightness, 2, 255);
-    lv_slider_set_value(ui_SliderBrightness, 2, LV_ANIM_OFF);
+    lv_slider_set_value(ui_SliderBrightness, 100, LV_ANIM_OFF);
     if(lv_slider_get_mode(ui_SliderBrightness) == LV_SLIDER_MODE_RANGE) lv_slider_set_left_value(ui_SliderBrightness, 0,
                                                                                                      LV_ANIM_OFF);
     lv_obj_set_width(ui_SliderBrightness, 500);
@@ -61,7 +61,7 @@ void ui_ScreenTest_screen_init(void)
     lv_obj_set_width(ui_LabelBrightness, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_LabelBrightness, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_align(ui_LabelBrightness, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_LabelBrightness, "2");
+    lv_label_set_text(ui_LabelBrightness, "100");
     lv_obj_set_style_text_font(ui_LabelBrightness, &lv_font_montserrat_40, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_add_event_cb(ui_SliderBrightness, ui_event_SliderBrightness, LV_EVENT_ALL, NULL);
